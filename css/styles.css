@@ -1,0 +1,326 @@
+/* GENERAL STYLE */
+:root {
+    --main-background-color:#F5F5F5;
+    --main-color-1:#212121;
+    --main-color-2: #757575;
+    --main-color-3: #2196F3;
+    --main-color-4:#ffffff;
+    --background-header-footer:#2F303A;
+    --our-team-background:#F5F4FA; 
+    --logo-studio-color:#000000; 
+    --accent-color:		#DC143C;
+
+    
+}
+/* Background Header, Footer */
+.hero-background,
+.footer-background {
+    background-color:var( --background-header-footer);
+    text-align: center;
+}
+body {
+    background-color:var(--main-background-color);   
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:var(--main-color-1);
+    letter-spacing: 0.03em
+} 
+
+/* -------------------
+   RESET CSS STYLES
+   ------------------- */
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+/* remove list marker */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* add efects  */
+.link:hover,
+.link:focus {
+    color:var(--main-color-3);
+}
+/* remove the underline */
+.link-decorate {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    outline: 2px solid tomato;
+    
+}
+
+/* ---------------
+        HEADER 
+   --------------- */
+.header-background{
+    background-color:var(--main-color-4) ;
+    
+ }
+
+.head-nav {
+    display: flex;
+    align-items: center;
+    
+} 
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    
+    margin-right: 93px;
+
+    text-decoration: none; 
+}
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color:var(--main-color-3);
+    }
+.logo-studio {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color:var(--logo-studio-color);
+}
+.site-nav {
+    display: flex;
+    
+}
+.nav-item {
+    outline: 2px solid teal;
+}
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.link-text {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+
+
+    font-weight: 500;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--main-color-1);
+    text-decoration: none;
+
+   
+}
+.accent-color {
+    color:var(--accent-color);
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+   
+}
+
+.item:not(:last-child){
+    margin-right: 50px;
+}
+
+.link-color {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+
+    font-weight: 500;  
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color:var(--main-color-2);
+
+     
+}
+
+/* --------------
+         MAIN
+   -------------- */
+.main-background {
+    background-color: var(--main-background-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--main-color-4);
+    
+    outline: 2px solid teal;
+
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 30px;
+     padding-top: 200px;
+     width: 696px;
+}
+/* Hero button wiev */
+.btn-wiev {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    color:var(--main-color-4);
+}
+.btn {
+    display: inline-block;
+    font-family:inherit;
+    background:  var(--main-color-3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    outline: 2px solid green;
+
+   
+} 
+
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--main-color-4);
+    color: var( --main-color-1);
+}
+/* Benefits title style */
+.benefits-title {
+    font-weight: 700;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--main-color-1);   
+}
+/*features -discription  */
+.peculiarities-text {
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color:var(--main-color-2);
+
+    
+}
+.our-work {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--main-color-1);
+}
+.our-team-background {
+    background:var(--our-team-background);
+}
+/* our team style text */
+.our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--main-color-1); 
+}
+/* Background photo team */
+.background-photo {
+    background:var(--main-color-4);
+}
+/* names of team members styles */
+.members-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color:var(--main-color-1);
+}
+.job-title {
+    font-size: 16px;
+    line-height: calc(19/16); 
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color:var(--main-color-2);
+}
+
+/* FOOTER */
+
+
+/* Second peace logo with footer */
+.logo-studio-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color:var(--main-color-4);
+}
+.addres-link {
+    font-style: normal;
+}
+.link-addres-footer {
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color:var(--main-color-4);
+
+    text-decoration: none;
+}
+.link-footer {
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+}
+/* PORTFOLIO */
+.filter-button {
+    background: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+       background:var(--main-color-3);
+       color:var(--main-color-4);
+}
+/* content button */
+.btn-text {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    color:var(--main-color-1);  
+}
+.project-background {
+    background-color: var(--main-color-4);
+}
+.project-items {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    color:var(--main-color-1);
+}
+.software-items { 
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    color:var(--main-color-2);    
+}
