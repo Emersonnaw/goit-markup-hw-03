@@ -28,30 +28,32 @@
             </ul>
    </header> 
    <main class="main-background">
-        <section class="hero-background">
+        <section class="hero-section">
            <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                      <!-- Hiro button-->
-                <button type="button" class="btn-wiev btn link">Замовити послугу </button> 
+                <button type="button" class="btn-wiev btn link">Замовити послугу</button> 
            </div>
         </section>
-        <section>
-            <div class="container">
-                <h2 hidden >Особливості</h2>
-                <ul class="">
-                    <li>
+        <section class="section">
+            <div class="container ">
+                <!-- it was before <h2 hidden >Особливості</h2> -->
+                <h2 class="visually-hidden" >Особливості</h2>
+                <!-- flex list -->
+                <ul class="benefits">
+                    <li class ="benefits-list">
                         <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3> 
                         <p class="peculiarities-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                      </li>
-                    <li>
+                    <li class ="benefits-list">
                         <h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="peculiarities-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                     <li>
+                     <li class ="benefits-list">
                         <h3 class="benefits-title">ПЛАНУВАННЯ</h3>
                         <p class="peculiarities-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                     </li>
-                    <li>
+                     </li >
+                    <li class ="benefits-list">
                         <h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="peculiarities-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -59,58 +61,68 @@
             </div>
             
         </section>
-        <section>
-            <div class="container">
+        <section class="section">
+            <div class="container" >
                 <h2 class="our-work">Чим ми займаємося</h2>
-                <ul class="">
-                    <li><img src="./images/caseone.jpg" alt="compose algorithms" width="370" height="294"></li>
-                    <li><img src="./images/casetwo.jpg" alt="testing products"  width="370" height="294"></li>
-                    <li><img src="./images/casethree.jpg" alt=" design " width="370" height="294"></li>
+                <ul class="our-work-list">
+                    <li class="work-items"><img  class="work-img" src="./images/caseone.jpg" alt="compose algorithms" width="370" height="294"></li>
+                    <li class="work-items"><img class="work-img" src="./images/casetwo.jpg" alt="testing products"  width="370" height="294"></li>
+                    <li class="work-items"><img class="work-img" src="./images/casethree.jpg" alt=" design " width="370" height="294"></li>
                 </ul>
             </div>
             
         </section>
-        <section class="our-team-background">
-            <div class="container">
-                <h2 class="our-team">Наша команда</h2>
-                <ul class="">
+        <section class="our-team-background section">
+            <div class="container ">
+                <h2 class="our-team-title">Наша команда</h2>
+                <ul class="team-description">
                      <li class="background-photo">
-                        <img src="./images/igordemianenko.jpg" alt="Igor Demianenko" width="270" height="260">
-                        <h3 class="members-team">Ігор Дем'яненко</h3>
-                        <p class="job-title">Product Designer</p>
+                        <img class ="img-team" src="./images/igordemianenko.jpg" alt="Igor Demianenko" width="270" height="260">
+                        <div class="team-info">
+                            <h3 class="members-team">Ігор Дем'яненко</h3>
+                            <p class="job-title">Product Designer</p>
+                        </div>
+                        
                     </li>
                     <li class="background-photo">
-                        <img src="./images/olgarepina.jpg" alt="Olga Repina" width="270" height="260">
-                        <h3 class="members-team">Ольга Рєпіна</h3>
-                        <p class="job-title">Frontend Developer</p>
+                        <img  class ="img-team" src="./images/olgarepina.jpg" alt="Olga Repina" width="270" height="260">
+                        <div class="team-info">
+                            <h3 class="members-team">Ольга Рєпіна</h3>
+                            <p class="job-title">Frontend Developer</p>
+                        </div>
+                        
                     </li>
                     <li class="background-photo">
-                        <img src="./images/nikolaytarasov.jpg" alt="Mikola Tarasov" width="270" height="260">
-                        <h3 class="members-team">Микола Тарасов</h3>
-                        <p class="job-title">Marketing</p>
+                        <img class ="img-team" src="./images/nikolaytarasov.jpg" alt="Mikola Tarasov" width="270" height="260">
+                        <div class="team-info">
+                            <h3 class="members-team">Микола Тарасов</h3>
+                             <p class="job-title">Marketing</p>
+                        </div>
+                        
                     </li>
                     <li class="background-photo">
-                         <img src="./images/mikailermakov.jpg" alt="Mikail Ermakov" width="270" height="260">
-                        <h3 class="members-team">Михайло Єрмаков</h3>
-                        <p class="job-title">UI Designer</p>
+                        <img  class ="img-team" src="./images/mikailermakov.jpg" alt="Mikail Ermakov" width="270" height="260">
+                        <div class="team-info">
+                          <h3 class="members-team">Михайло Єрмаков</h3>
+                            <p class="job-title">UI Designer</p>  
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
-            
         </section>    
    </main>
    <footer class="footer-background">
         <div class="container">
-            <a href="./index.html" class="link-decorate"><span class="logo-web">Web</span><span class="logo-studio-footer">Studio</span> </a>
+            <a href="./index.html" class="logo-footer-link"><span class="logo-web">Web</span><span class="logo-studio-footer">Studio</span> </a>
             <address class="addres-link">
                 <ul class="">
                     <li><a href="https://goo.gl/maps/ArKhMotf5cThkB2s5" class=" link-addres-footer link">м. Київ, пр-т Лесі Українки, 26</a> </li>
-                    <li><a href="mailto:info@devstudio.com" class= link-footer link">info@devstudio.com</a> </li>
+                    <li><a href="mailto:info@devstudio.com" class= "link-footer link">info@devstudio.com</a> </li>
                     <li><a href="tel:+380961111111" class=" link-footer link">+38 096 111 11 11</a></li>
                 </ul>        
             </address>
-        </div>
-       
+        </div>  
    </footer>
 </body>
 </html>
