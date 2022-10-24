@@ -8,7 +8,8 @@
     --background-header-footer:#2F303A;
     --our-team-background:#F5F4FA; 
     --logo-studio-color:#000000; 
-    --accent-color:		#DC143C;
+    --accent-color:		#2196F3;
+    --focus-btn-hero :#188CE8;
 
     
 }
@@ -86,7 +87,11 @@ ul {
 
 .logo-header {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
+    font-size: 26px;
+    line-height: calc(31/26);
     text-decoration: none; 
 }
 .logo-web {
@@ -119,26 +124,21 @@ ul {
     padding-top: 32px;
     padding-bottom: 32px;
 
-
-
     font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--main-color-1);
     text-decoration: none;
 
-   
 }
 .accent-color {
     color:var(--accent-color);
 }
-
 .contacts {
     display: flex;
     margin-left: auto;
    
 }
-
 .item:not(:last-child){
     margin-right: 50px;
 }
@@ -160,9 +160,7 @@ ul {
 /* --------------
          MAIN
    -------------- */
-.main-background {
-    background-color: var(--main-background-color);
-}
+
 .hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -182,38 +180,46 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:var(--main-color-4);
-    
-   
-
-     
 }
-/* Hero button wiev */
+
+/* Hero button */
+.flex-utilit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btn-wiev {
     font-weight: 700;
     font-size: 16px;
+    font-family:inherit;
     line-height: calc(30/16);
+    
+    text-align: center;
     color:var(--main-color-4);
 }
+
 .btn {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 152px;
-    padding: 10px 32px;
-    font-family:inherit;
+    padding: 10px 32px ;
+    border: none;
+    width: 216px;
+   
     background:  var(--main-color-3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
 } 
-
-
+/* Effects hiro button */
 .btn:hover,
 .btn:focus {
-    background-color: var(--main-color-4);
-    color: var( --main-color-1);
+    background-color: var(--focus-btn-hero );
+    /* color: var( --main-color-1); */
 }
-/* test  hidden H2*/
+/* section peculiarities background */
+.back-peculiarities {
+    background-color:var( --main-color-4) ;
+    padding-bottom: 0px;
+}
+/* hide H2*/
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -248,6 +254,7 @@ ul {
     width: 270px;
 
     font-weight: 700;
+    font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -267,7 +274,9 @@ ul {
     
 }   
 /* What are we doing */
-
+.back-our-works {
+    background-color:var( --main-color-4) ;
+}
 .our-work {
     margin-bottom: 50px;
 
@@ -330,9 +339,10 @@ ul {
 
 .team-info {
     padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     border: 1px solid var( --main-color-4) ;
     border-top: none;
+    border-radius: 0px 0px 4px 4px;
 }
 /* names of team members styles */
 .members-team {
@@ -359,15 +369,18 @@ ul {
 /* -------------- */
 
 .footer-background {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-color:var( --background-header-footer);
     text-align: left;
 }
 .logo-footer-link {
+    display: block;
     margin-bottom: 20px ;
-
+    
+    font-size: 26px;
+    line-height: calc(31/26);
     text-decoration: none;    
 }
 /* Second peace logo with footer */
@@ -382,8 +395,11 @@ ul {
 .addres-link {
     font-style: normal;
 }
-.link-addres-footer {
+.footer-links:not(:last-child) {
     margin-bottom: 9px;
+}
+.link-addres-footer {
+   
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color:var(--main-color-4);
@@ -391,9 +407,9 @@ ul {
     text-decoration: none;
 }
 .link-footer {
-    margin-bottom: 9px;
+    font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em; 
     color: rgba(255, 255, 255, 0.6);
 
     text-decoration: none;
@@ -401,9 +417,20 @@ ul {
 
 
 
+
+
+
+
+
+
+
 /* ----------------
        PORTFOLIO
     ---------------- */
+.back-portfolio {
+    background-color: var(--main-color-4);
+}
+
 .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -421,6 +448,7 @@ ul {
 }
 .filter-button {
     display: block;
+    border: none;
 
     background-color:var(-main-background-color);
     border-radius: 4px;
@@ -438,6 +466,32 @@ ul {
     font-size: 16px;
     line-height: calc(26/16);
     color:var(--main-color-1);  
+}
+/* give buttons paddings */
+.btn-all {
+    min-width: 25px;
+    padding: 6px 25px;
+
+}
+
+.btn-websites {
+    min-width: 81px;
+    padding: 6px 22px;
+}
+
+.btn-mods {
+    min-width: 68px;
+    padding: 6px 22px;
+}
+
+.btn-design {
+    min-width:59px ;
+    padding:6px 22px ;
+}
+
+.btn-market {
+    min-width: 86px;
+    padding: 6px 22px;
 }
 .project-background {
     display: flex;
